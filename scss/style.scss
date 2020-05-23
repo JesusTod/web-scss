@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// создал переменную
+$peremennaya: 10px;
+
+// миксанул переменную в отступы центрального блока с текстом.
+@mixin my_mix {
+    padding-left: $peremennaya;
+    padding-right: $peremennaya;
+}
+
+header, footer{
+    background-color: rgb(233, 232, 232);
+    padding: 10px;
+    width: 100%;
+}
+
+main{
+    background-color: rgb(245, 245, 245);
+    padding: 15px;
+}
+.mid{
+    // использовать микс, который создал више
+    @include my_mix()
+}
+
+main{
+    display: flex;
+}
+.main_menu{
+    flex: 1 1 100%;
+    width: 100%;
+}
+
+// импорт всех правил @media из папки media.scss
+@import 'media';
+
+.end{
+    font-style: italic;
+    text-align: center;
+}

@@ -1,0 +1,47 @@
+@media(max-width: 1024px){
+    header{
+
+        background-color:rgb(142, 142, 255);
+    }
+    footer{
+
+        background-color: rgb(255, 255, 139);
+    }
+    main{
+        background-color: rgba(76, 0, 130, 0.233);
+    }
+}
+
+// вложения 
+@media(max-width: 600px){
+    main{
+        display: block;
+    }
+    main{
+        .left_top{
+            padding-bottom: 2.5px;
+            background-color: rgba(255, 166, 0, 0.700);
+        }
+        .mid{
+            padding-left: 0px;
+            padding-right: 0px;
+            padding-top: 2.5px;
+            padding-bottom: 2.5px;
+            background-color: rgba(255, 166, 0, 0.500);
+        }
+        .right_bot{
+            padding-top: 2.5px;
+            background-color: rgba(255, 166, 0, 0.300);
+        }
+    }
+}
+
+@media(max-width: 414px){
+    header{
+        background-color: rgb(255, 111, 111);
+        
+    }
+    footer{
+        background-color: rgb(111, 111, 111);
+    }
+}
